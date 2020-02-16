@@ -10,5 +10,8 @@
 
 .bg-img {
     background-image: url("./images/aqua_marble_seamless.png");
+}
+
+.blue-border-top {
     border-top: 3px solid #2220b4;
 }

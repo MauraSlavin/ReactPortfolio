@@ -22,7 +22,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="col-12 bg-blue" id="nav">
+      <div className="col-12 bg-blue " id="nav">
         <NavTabs />
         <Route exact path="/" component={About} />
         <Route exact path="/about" component={About} />
