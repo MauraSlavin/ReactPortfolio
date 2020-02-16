@@ -40,7 +40,7 @@ function About() {
       <p>
         She enjoys spending time with her family and friends, bicycling, reading, kayaking, hiking and just being
         outside (in almost any kind of
-        weather – as long as I’m dressed properly &#x263A).
+        weather – as long as I’m dressed properly!).
       </p>
 
       <p>

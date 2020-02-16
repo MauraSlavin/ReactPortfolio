@@ -10,6 +10,5 @@
 
 .bg-img {
     background-image: url("./images/aqua_marble_seamless.png");
-    /* to get rid of white space before footer */
-    /* padding-bottom: 1px; */
+    border-top: 3px solid #2220b4;
 }

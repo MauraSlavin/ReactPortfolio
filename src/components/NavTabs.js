@@ -8,36 +8,40 @@ import "./NavTabs.css";
 // function NavTabs(props) {
 function NavTabs() {
   return (
-    <div className="row">
-    <div className="col-12 text-center blue-border">
-    <ul className="nav nav-tabs text-light">
-      <li className="nav-item">
-        <Link
-          to="/"
-          className={window.location.pathname === "/"  ? "nav-link text-light" : "nav-link text-light"}
-        >Home</Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/about"
-          className={window.location.pathname === "/about"  ? "nav-link text-light" : "nav-link text-light"}
-        >About</Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/portfolio"
-          className={window.location.pathname === "/portfolio"  ? "nav-link text-light" : "nav-link text-light"}
-        >Portfolio</Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/contact"
-          className={window.location.pathname === "/contact"  ? "nav-link text-light" : "nav-link text-light"}
-        >Contact</Link>
-      </li>
-    </ul>
+    
+    <div className="navbar justify-content-between">
+
+      <ul className="list-unstyled ml-2 mt-2 mb-1">
+        <li className="text-light">MauraMSlavin@gmail.com</li>
+        <li className="text-light">603.397.8572</li>
+      </ul>
+
+      <ul className="nav nav-tabs border-bottom-0">
+
+        <li className="nav-item">
+          <Link
+            to="/about"
+            className={window.location.pathname === "/about"  ? "nav-link text-light" : "nav-link text-light"}
+          >About</Link>
+        </li>
+
+        <li className="nav-item">
+          <Link
+            to="/portfolio"
+            className={window.location.pathname === "/portfolio"  ? "nav-link text-light" : "nav-link text-light"}
+          >Portfolio</Link>
+        </li>
+
+        <li className="nav-item">
+          <Link
+            to="/contact"
+            className={window.location.pathname === "/contact"  ? "nav-link text-light" : "nav-link text-light"}
+          >Contact</Link>
+        </li>
+        
+      </ul>
     </div>
-    </div>
+ 
   );
 }
 
