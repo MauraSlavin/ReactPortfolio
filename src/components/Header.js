@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-// import './Header.css';
+import './Header.css';
 
 
 import { BrowserRouter as Router, Route} from "react-router-dom";
@@ -16,7 +16,7 @@ function Header() {
     {/* <div class="container clearfix"> */}
     <div className="row">
       <div className="col-12 text-center">
-        <div className="bg-primary">
+        <div className="bg-blue">
           <h1 className="p-3 text-light">Maura M. Slavin</h1> 
 
           <div id="nav">

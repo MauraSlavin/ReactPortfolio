@@ -13,3 +13,6 @@ footer {
     /* these lines give it a sticky footer */
   }
 
+.bg-blue {
+    background-color: rgb(23, 155, 219);
+  }

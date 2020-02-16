@@ -1,0 +1,10 @@
+
+.blue-border {
+    border-bottom: 3px solid #2220b4;
+}
+
+.nav-tabs {
+    /* To remove white line between navbar & blue border */
+    /* There's a transparent border making the space */
+    border-bottom: 0 !important;
+}

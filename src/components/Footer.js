@@ -7,7 +7,7 @@ function Footer() {
 
   <footer>
     <div className="row">
-        <h6 className="col-12 text-center text-light bg-secondary p-3 m-0">
+        <h6 className="col-12 text-center text-light bg-blue p-3 m-0">
       Thank you!
     </h6>
     </div>

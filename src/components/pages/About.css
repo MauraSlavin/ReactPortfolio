@@ -1,0 +1,15 @@
+#my-pic {
+    float: left;
+    /* to get the text to wrap around the picture */
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+    list-style-position: inside;
+}
+
+.bg-img {
+    background-image: url("./images/aqua_marble_seamless.png");
+    /* to get rid of white space before footer */
+    /* padding-bottom: 1px; */
+}

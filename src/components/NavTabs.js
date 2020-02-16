@@ -1,7 +1,7 @@
 import React from "react";
 // to make router works
 import {Link} from "react-router-dom";
-// import "./NavTabs.css";
+import "./NavTabs.css";
 
 // MUST use anonymous functions ... () => fcn() ... to pass parameters to a function in JSX
 // Thing passed is the name of the component.
@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 function NavTabs() {
   return (
     <div className="row">
-    <div className="col-12 text-center">
+    <div className="col-12 text-center blue-border">
     <ul className="nav nav-tabs text-light">
       <li className="nav-item">
         <Link
