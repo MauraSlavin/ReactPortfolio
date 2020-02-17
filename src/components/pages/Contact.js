@@ -1,5 +1,5 @@
 import React from "react";
-import "./pages.css";
+import "./Pages.css";
 import "./images/aqua_marble_seamless.png";
 import Form from "./Form"
 

@@ -1,6 +1,6 @@
 import React from "react";
 import photo from "./images/Maura.jpg";
-import "./pages.css";
+import "./Pages.css";
 import "./images/aqua_marble_seamless.png";
 import resume from './files/resume.pdf';
 
@@ -10,17 +10,17 @@ function About() {
     <div>
     
       <div>
-        <div class="row blue-border-top p-2">
+        <div className="row blue-border-top p-2">
 
-          <div class="col-md-4 col-xs-12 text-left">
+          <div className="col-md-4 col-xs-12 text-left">
             <a href="https://github.com/MauraSlavin" target="_blank"  rel="noopener noreferrer" className="text-light">Link to Github Profile</a>
           </div> 
 
-          <div class="col-md-4 col-xs-12 text-center">
+          <div className="col-md-4 col-xs-12 text-center">
             <a href={resume} target="_blank" rel="noopener noreferrer" className="text-light">Link to resume</a>
           </div>
 
-          <div class="col-md-4 col-xs-12 text-right">
+          <div className="col-md-4 col-xs-12 text-right">
             <a href="https://www.linkedin.com/in/mauraslavin/" target="_blank"  rel="noopener noreferrer" className="text-light">Link to LinkedIn Profile</a>
           </div> 
         </div> 

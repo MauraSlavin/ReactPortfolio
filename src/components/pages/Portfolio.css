@@ -1,0 +1,295 @@
+body {
+  /* default fonts, size, line spacing and text color for whole site. */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* font-size: 18px; */
+  line-height: 27px;
+  /* color: #777777; */
+  /* margin-top: 0; */
+  /* background: url("../images/aqua_marble_seamless.jpg"); */
+  /* background for the whole page */
+}
+
+* {
+  box-sizing: border-box;
+  /* includes border & margin in item's width */
+}
+
+/* general */
+
+/* .container {
+  width: 100%;
+  /* use all 960px */
+  /* max-width: 960px; */
+  /* main content block never gets bigger than this */
+  /* margin: 0 auto; */
+  /* no top margin */
+  /* clear: both; */
+  /* clear any extraneous floats */
+/* } */ */
+
+h1, h3 {
+  /* default text attributes for headers */
+  margin-bottom: 20px;
+  /* default spacing after each header and paragraph */
+  font-family: Georgia, Times, "Times New Roman", serif;
+  /* font-weight: bold; */
+  /* color: #2220b4; */
+}
+
+h1 {
+  /* make more space after primary headers; bigger font & more space between lines */
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  /* light border after primary header */
+  border-bottom: 3px solid #dddddd;
+}
+
+h3 {
+  /* text for project links, goes over thumbnails */
+  width: 100%;
+  font-size: 22px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  /* border-bottom: 2px solid #eeeeee; */
+}
+
+/* header, same as other pages */
+
+.myHeader {
+  z-index: 99;
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  overflow: auto;
+  color: #ffffff;
+  background: #ffffff;
+  border-bottom: 2px solid #cccccc;
+}
+
+/* same as other pages */
+
+.myName {
+  float: left;
+  width: 320px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: #2220b4;
+}
+
+.myName:hover {
+  color: black;
+}
+
+/* nav bar same as other pages */
+
+nav {
+  margin-top: 25px;
+  float: right;
+  padding-right: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid darkgrey;
+}
+
+/* no vertical bar to the left of the first nav item */
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/* footer */
+
+footer {
+  padding: 12px 0 35px;
+  width: 100%;
+  margin: auto;
+  clear: both;
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+  background: #666666;
+  border-top: 3px solid #2220b4;
+  height: 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* main */
+
+.main-section {
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 20px 0 70px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+/* portfolio page css ONLY in this file; separate file for other pages */
+
+/* formatting for picture & text to click on for each project */
+
+.work {
+  position: relative;
+  /* to get text on top of picture */
+  float: left;
+  /* animation */
+  /* transition: transform .2s;  */
+  width: 254px;
+  margin: 20px 0 25px;
+  overflow: auto;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  overflow: hidden;
+  border: 1px solid rgb(23, 155, 219);
+}
+
+.project {
+  transition: transform .2s;
+}
+
+.work img {
+  /* image for the project */
+  width: 100%;
+  /* height: 249px; */
+  /* border: 1 solid #2220b4; */
+}
+
+.img {
+   padding: 70px 20px 20px;
+}
+
+.work h3 {
+  /* clickable text for the project */
+  position: absolute;
+  top: 0;
+  padding: 15px;
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  /* background: #2220b4; */
+  /* border-bottom: 0; */
+}
+
+.project {
+  text-align: center;
+  display: block;
+}
+
+.project:hover {
+  /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
+}
+
+.icons {
+  /* group all the projects together for wrapping purposes */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* clear floats */
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* media queries */
+
+/*  No special formatting needed for super large screens & desktops - over 1200px works without exceptions needed */
+
+/* formatting for tablet sized screens */
+
+@media screen and (max-width:768px) {
+  .main-section {
+    float: left;
+    padding: 2% 2% 30px 2%;
+  }
+  .main-section p:last-child {
+    margin-bottom: auto;
+  }
+}
+
+/* end of max width 768 */
+
+/* formatting for cell phones */
+
+@media screen and (max-width:640px) {
+  body {
+    margin: 0;
+    clear: both;
+  }
+  header {
+    /* sticky header */
+    position: fixed;
+    top: 0;
+  }
+  h1 {
+    padding: 0 0 1% 0;
+  }
+  .myName {
+    /* name takes full width of the screen */
+    width: 100%;
+  }
+  nav {
+    /* nab bar is centered under the name */
+    float: none;
+    margin: 3%;
+    text-align: center;
+  }
+  nav a {
+    padding: 0 7px;
+    margin: 15px 0 0 0;
+    border: 0;
+  }
+  .main-section {
+    max-width: 95%;
+    margin: 180px auto 20%;
+    float: none;
+    background-color: white;
+    height: 1600px;
+    /* to get white background under all of the project thumbnails */
+  }
+
+  .work {
+    margin: auto;
+    /* leave a bit of space after the last project */
+    margin-bottom: 25px;
+    width: 234px;
+  }
+
+  a {
+    transition: transform .2s;
+    /* Animation */
+  }
+
+  /* change opacity based on whether it's hovered or clicked */
+  a:hover {
+    transform: scale(1.1);
+    /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  
+}
+
+/* end of max width 640 */
