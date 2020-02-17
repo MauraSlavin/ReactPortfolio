@@ -3,25 +3,30 @@ import "./Pages.css";
 import "./Portfolio.css";
 import "./images/aqua_marble_seamless.png";
 // import icons from "./images/icons";
-import proj1Icon from "./images/icons/rewards.png"
-// import proj1Icon from "./images/icons/burger.png"
+import proj1Icon from "./images/icons/notetaker.png";
+import proj2Icon from "./images/icons/burger.png";
+import proj3Icon from "./images/icons/rewards.png";
+import proj4Icon from "./images/icons/calendar-screenshot.png";
+import proj5Icon from "./images/icons/movie-screenshot.png";
+import proj6Icon from "./images/icons/quiz-screenshot.png";
+import proj7Icon from "./images/icons/weather-screenshot.png";
 
 const padding = { padding: "70px 20px 20px"};
 
 function Portfolio() {
   return (
 
-    <div className="mt-0 font-size-18">
-      <div>
+    // <div className="mt-0 font-size-18">
+    //   <div>
 
-        <div className="row bg-img blue-border-top">
+        <div className="row bg-img blue-border-top mt-0 font-size-18">
           <div className="col-10 offset-1 text-left">
             <h2 className="text-center m-3">Portfolio</h2>
 
             {/* <!-- used work div to treat one project as a whole for formatting -->
             <!-- used project div for making bigger when hovering --> */}
 
-            <div className="icons text-light">
+            <div className="icons text-light mb-2">
               {/* <!-- Need this div for wrapping --> */}
 
 
@@ -29,14 +34,14 @@ function Portfolio() {
               <div className="work">
 
                 <div className="project">
-                  <a href="https://enigmatic-caverns-81757.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj1Icon} alt="Rewards application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Rewards</strong></h3>
+                  <a href="https://polar-dawn-99284.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={proj1Icon} alt="Notetaker application screenshot" style={padding}/>
+                    <h3 className="bg-blue rounded"><strong>Notetaker</strong></h3>
                   </a>
                 </div> {/* <!-- end of project div for image link to application --> */}
 
                 <div className="project">
-                  <a href="https://github.com/MauraSlavin/rewards" target="_blank" rel="noopener noreferrer">Github page for "Rewards."</a>
+                  <a href="https://github.com/MauraSlavin/notetaker" target="_blank" rel="noopener noreferrer">Github page for <strong>Notetaker</strong>.</a>
                 </div> {/*  <!-- end of project div for github link --> */}
 
               </div> {/* <!-- end of Project div --> */}
@@ -46,32 +51,30 @@ function Portfolio() {
               <div className="work">
 
                 <div className="project">
-                  <a href="https://mauraslavin.github.io/07-movie-API-search/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/movie-screenshot.png" alt="Finding Films application screenshot"/>
-                    <h3>Finding Films</h3>
+                  <a href="https://floating-hamlet-11534.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={proj2Icon} alt="Burger application screenshot" style={padding}/>
+                    <h3 className="bg-blue rounded"><strong>Burger</strong></h3>
                   </a>
-                </div> {/* <!-- end of project div for image link to application --> */ }
+                </div> {/* <!-- end of project div for image link to application --> */}
 
                 <div className="project">
-                  <a href="https://github.com/MauraSlavin/07-movie-API-search" target="_blank" rel="noopener noreferrer">Github page for "Finding
-                    Films."</a>
+                  <a href="https://github.com/MauraSlavin/burger" target="_blank" rel="noopener noreferrer">Github page for <strong>Burger</strong>.</a>
                 </div> {/*  <!-- end of project div for github link --> */}
 
               </div> {/* <!-- end of Project div --> */}
-
 
               {/* <!-- PROJECT 3 --> */}
               <div className="work">
 
                 <div className="project">
-                  <a href="https://mauraslavin.github.io/Calendar/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/calendar-screenshot.png" alt="Daily Planner application screenshot"/>
-                    <h3>Daily Planner</h3>
+                  <a href="https://floating-hamlet-11534.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={proj3Icon} alt="Rewards application screenshot" style={padding}/>
+                    <h3 className="bg-blue rounded"><strong>Rewards</strong></h3>
                   </a>
-                </div> {/* <!-- end of project div for image link to application --> */ }
+                </div> {/* <!-- end of project div for image link to application --> */}
 
                 <div className="project">
-                  <a href="https://github.com/MauraSlavin/Calendar" target="_blank" rel="noopener noreferrer">Github page for "Daily Planner."</a>
+                  <a href="https://github.com/MauraSlavin/rewards" target="_blank" rel="noopener noreferrer">Github page for <strong>Rewards</strong>.</a>
                 </div> {/*  <!-- end of project div for github link --> */}
 
               </div> {/* <!-- end of Project div --> */}
@@ -81,14 +84,14 @@ function Portfolio() {
               <div className="work">
 
                 <div className="project">
-                  <a href="https://mauraslavin.github.io/Weather/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/weather-screenshot.png" alt="Weather application screenshot"/>
-                    <h3>Weather</h3>
+                  <a href="https://mauraslavin.github.io/Calendar/" target="_blank" rel="noopener noreferrer">
+                    <img src={proj4Icon} alt="Daily Planner application screenshot" style={padding}/>
+                    <h3 className="bg-blue rounded"><strong>Daily Planner</strong></h3>
                   </a>
-                </div> {/* <!-- end of project div for image link to application --> */ }
+                </div> {/* <!-- end of project div for image link to application --> */}
 
                 <div className="project">
-                  <a href="https://github.com/MauraSlavin/Weather" target="_blank" rel="noopener noreferrer">Github page for "Weather."</a>
+                  <a href="https://github.com/MauraSlavin/calendar" target="_blank" rel="noopener noreferrer">Github page for <strong>Daily Planner</strong>.</a>
                 </div> {/*  <!-- end of project div for github link --> */}
 
               </div> {/* <!-- end of Project div --> */}
@@ -98,14 +101,14 @@ function Portfolio() {
               <div className="work">
 
                 <div className="project">
-                  <a href="https://mauraslavin.github.io/Quiz/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/quiz-screenshot.png" alt="Quiz appliation screenshot"/>
-                    <h3>Take a Quiz</h3>
+                  <a href="https://mauraslavin.github.io/07-movie-API-search/" target="_blank" rel="noopener noreferrer">
+                    <img src={proj5Icon} alt="Finding Movies application screenshot" style={padding}/>
+                    <h3 className="bg-blue rounded"><strong>Finding Movies</strong></h3>
                   </a>
-                </div> {/* <!-- end of project div for image link to application --> */ }
+                </div> {/* <!-- end of project div for image link to application --> */}
 
                 <div className="project">
-                  <a href="https://github.com/MauraSlavin/Quiz" target="_blank" rel="noopener noreferrer">Github page for "Quiz."</a>
+                  <a href="https://github.com/MauraSlavin/07-movie-API-search" target="_blank" rel="noopener noreferrer">Github page for <strong>Finding Movies</strong>.</a>
                 </div> {/*  <!-- end of project div for github link --> */}
 
               </div> {/* <!-- end of Project div --> */}
@@ -115,14 +118,14 @@ function Portfolio() {
               <div className="work">
 
                 <div className="project">
-                  <a href="https://floating-hamlet-11534.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/burger.png" alt="Burger application screenshot"/>
-                    <h3>Devouring Burgers</h3>
+                  <a href="https://mauraslavin.github.io/Quiz/" target="_blank" rel="noopener noreferrer">
+                    <img src={proj6Icon} alt="Quiz application screenshot" style={padding}/>
+                    <h3 className="bg-blue rounded"><strong>Quiz</strong></h3>
                   </a>
-                </div> {/* <!-- end of project div for image link to application --> */ }
+                </div> {/* <!-- end of project div for image link to application --> */}
 
                 <div className="project">
-                  <a href="https://github.com/MauraSlavin/burger" target="_blank" rel="noopener noreferrer">Github page for "Burgers."</a>
+                  <a href="https://github.com/MauraSlavin/Quiz" target="_blank" rel="noopener noreferrer">Github page for <strong>Quiz</strong>.</a>
                 </div> {/*  <!-- end of project div for github link --> */}
 
               </div> {/* <!-- end of Project div --> */}
@@ -132,25 +135,24 @@ function Portfolio() {
               <div className="work">
 
                 <div className="project">
-                  <a href="https://polar-dawn-99284.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/notetaker.png" alt="Notetaker application screenshot"/>
-                    <h3>Note Taker</h3>
+                  <a href="https://mauraslavin.github.io/Weather/" target="_blank" rel="noopener noreferrer">
+                    <img src={proj7Icon} alt="Weather application screenshot" style={padding}/>
+                    <h3 className="bg-blue rounded"><strong>Weather</strong></h3>
                   </a>
-                </div> {/* <!-- end of project div for image link to application --> */ }
+                </div> {/* <!-- end of project div for image link to application --> */}
 
                 <div className="project">
-                  <a href="https://github.com/MauraSlavin/notetaker" target="_blank" rel="noopener noreferrer">Github page for "Note Taker."</a>
+                  <a href="https://github.com/MauraSlavin/Weather" target="_blank" rel="noopener noreferrer">Github page for <strong>Weather</strong>.</a>
                 </div> {/*  <!-- end of project div for github link --> */}
 
               </div> {/* <!-- end of Project div --> */}
-
 
             </div> {/* <!-- of icons div. --> */}
 
           </div> 
         </div> 
-      </div> 
-    </div> 
+    //   </div> 
+    // </div> 
 
   );
 }
