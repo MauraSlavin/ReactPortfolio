@@ -1,11 +1,7 @@
 import React, { Component } from "react";
-import NavTabs from "./NavTabs";
 import Header from "./Header";
 import Footer from "./Footer";
-// import Home from "./pages/Home";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+
 // rename BrowserRouter to Router (anything can be re-named when imported)
   // Route lets us define routes
 import { BrowserRouter as Router, Route} from "react-router-dom";

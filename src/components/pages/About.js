@@ -1,6 +1,6 @@
 import React from "react";
 import photo from "./images/Maura.jpg";
-import "./About.css";
+import "./pages.css";
 import "./images/aqua_marble_seamless.png";
 import resume from './files/resume.pdf';
 
@@ -8,8 +8,8 @@ import resume from './files/resume.pdf';
 function About() {
   return (
     <div>
+    
       <div>
-
         <div class="row blue-border-top p-2">
 
           <div class="col-md-4 col-xs-12 text-left">
@@ -29,7 +29,7 @@ function About() {
 
       <div className="row bg-img blue-border-top">        
         <div className="col-10 offset-1 text-left">
-          <h2 className="text-center m-2">A bit about me...</h2>
+          <h2 className="text-center m-3">A bit about me...</h2>
           {/* my picture */}
           <img src={photo} id="my-pic" alt="Maura's pic"/>
         
@@ -71,6 +71,7 @@ function About() {
         
         </div>
       </div>
+ 
     </div>
   );
 }

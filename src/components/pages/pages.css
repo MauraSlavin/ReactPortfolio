@@ -15,3 +15,11 @@
 .blue-border-top {
     border-top: 3px solid #2220b4;
 }
+
+label {
+    width: 95px;
+}
+
+input, textarea {
+    width: 250px !important;
+}
