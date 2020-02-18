@@ -9,7 +9,6 @@ export default class extends React.Component {
   }
 
   handleSubmit (event) {
-	alert("handleSubmit:" + this.state.message + " from " + this.state.name + " at " + this.state.email);
 	const templateId = 'template_ge54Jsqk';
 	
 	this.sendMessage(templateId, {
@@ -21,11 +20,6 @@ export default class extends React.Component {
   }
 
   sendMessage (templateId, variables) {
-	// alert("sendMessage");
-	alert("templateId: " + templateId);
-	alert(variables.message_html);
-	alert(variables.from_name);
-	alert(variables.reply_to);
 
 	window.emailjs.send('gmail', templateId, variables, 'user_SKsFv4sS17XKyEqKFqn8o')
 	// document.emailjs.send('gmail', templateId, variables, 'user_SKsFv4sS17XKyEqKFqn8o')

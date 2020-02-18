@@ -2,158 +2,88 @@ import React from "react";
 import "./Pages.css";
 import "./Portfolio.css";
 import "./images/aqua_marble_seamless.png";
-// import icons from "./images/icons";
-import proj1Icon from "./images/icons/notetaker.png";
-import proj2Icon from "./images/icons/burger.png";
-import proj3Icon from "./images/icons/rewards.png";
-import proj4Icon from "./images/icons/calendar-screenshot.png";
-import proj5Icon from "./images/icons/movie-screenshot.png";
-import proj6Icon from "./images/icons/quiz-screenshot.png";
-import proj7Icon from "./images/icons/weather-screenshot.png";
-
-const padding = { padding: "70px 20px 20px"};
+import projects from "./projects.json";
+import Project from "./Project"
+ 
+const icons = [
+    require('./images/icons/burger.png'),
+    require('./images/icons/calendar-screenshot.png'),
+    require('./images/icons/movie-screenshot.png'),
+    require('./images/icons/notetaker.png'),
+    require('./images/icons/rewards.png'),
+    require('./images/icons/weather-screenshot.png'),
+    require('./images/icons/quiz-screenshot.png'),
+];
 
 function Portfolio() {
   return (
+  
+    <div className="row bg-img blue-border-top mt-0 font-size-18">
+      <div className="col-10 offset-1 text-left">
 
-    // <div className="mt-0 font-size-18">
-    //   <div>
+        <h2 className="text-center m-3">Portfolio</h2>
+        <div className="icons text-light mb-2">
 
-        <div className="row bg-img blue-border-top mt-0 font-size-18">
-          <div className="col-10 offset-1 text-left">
-            <h2 className="text-center m-3">Portfolio</h2>
+          <Project 
+            name={projects[0].name}
+            projectLink={projects[0].projectLink}
+            githubLink={projects[0].githubLink}
+            image={icons[0]} 
+            alt={projects[0].alt}
+          />
 
-            {/* <!-- used work div to treat one project as a whole for formatting -->
-            <!-- used project div for making bigger when hovering --> */}
+          <Project 
+            name={projects[1].name}
+            projectLink={projects[1].projectLink}
+            githubLink={projects[1].githubLink}
+            image={icons[1]}
+            alt={projects[1].alt}
+          />
 
-            <div className="icons text-light mb-2">
-              {/* <!-- Need this div for wrapping --> */}
-
-
-              {/* <!-- PROJECT 1 --> */}
-              <div className="work">
-
-                <div className="project">
-                  <a href="https://polar-dawn-99284.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj1Icon} alt="Notetaker application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Notetaker</strong></h3>
-                  </a>
-                </div> {/* <!-- end of project div for image link to application --> */}
-
-                <div className="project">
-                  <a href="https://github.com/MauraSlavin/notetaker" target="_blank" rel="noopener noreferrer">Github page for <strong>Notetaker</strong>.</a>
-                </div> {/*  <!-- end of project div for github link --> */}
-
-              </div> {/* <!-- end of Project div --> */}
-
-
-              {/* <!-- PROJECT 2 --> */}
-              <div className="work">
-
-                <div className="project">
-                  <a href="https://floating-hamlet-11534.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj2Icon} alt="Burger application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Burger</strong></h3>
-                  </a>
-                </div> {/* <!-- end of project div for image link to application --> */}
-
-                <div className="project">
-                  <a href="https://github.com/MauraSlavin/burger" target="_blank" rel="noopener noreferrer">Github page for <strong>Burger</strong>.</a>
-                </div> {/*  <!-- end of project div for github link --> */}
-
-              </div> {/* <!-- end of Project div --> */}
-
-              {/* <!-- PROJECT 3 --> */}
-              <div className="work">
-
-                <div className="project">
-                  <a href="https://floating-hamlet-11534.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj3Icon} alt="Rewards application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Rewards</strong></h3>
-                  </a>
-                </div> {/* <!-- end of project div for image link to application --> */}
-
-                <div className="project">
-                  <a href="https://github.com/MauraSlavin/rewards" target="_blank" rel="noopener noreferrer">Github page for <strong>Rewards</strong>.</a>
-                </div> {/*  <!-- end of project div for github link --> */}
-
-              </div> {/* <!-- end of Project div --> */}
-
-
-              {/* <!-- PROJECT 4 --> */}
-              <div className="work">
-
-                <div className="project">
-                  <a href="https://mauraslavin.github.io/Calendar/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj4Icon} alt="Daily Planner application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Daily Planner</strong></h3>
-                  </a>
-                </div> {/* <!-- end of project div for image link to application --> */}
-
-                <div className="project">
-                  <a href="https://github.com/MauraSlavin/calendar" target="_blank" rel="noopener noreferrer">Github page for <strong>Daily Planner</strong>.</a>
-                </div> {/*  <!-- end of project div for github link --> */}
-
-              </div> {/* <!-- end of Project div --> */}
-
-
-              {/* <!-- PROJECT 5 --> */}
-              <div className="work">
-
-                <div className="project">
-                  <a href="https://mauraslavin.github.io/07-movie-API-search/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj5Icon} alt="Finding Movies application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Finding Movies</strong></h3>
-                  </a>
-                </div> {/* <!-- end of project div for image link to application --> */}
-
-                <div className="project">
-                  <a href="https://github.com/MauraSlavin/07-movie-API-search" target="_blank" rel="noopener noreferrer">Github page for <strong>Finding Movies</strong>.</a>
-                </div> {/*  <!-- end of project div for github link --> */}
-
-              </div> {/* <!-- end of Project div --> */}
-
-
-              {/* <!-- PROJECT 6 --> */}
-              <div className="work">
-
-                <div className="project">
-                  <a href="https://mauraslavin.github.io/Quiz/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj6Icon} alt="Quiz application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Quiz</strong></h3>
-                  </a>
-                </div> {/* <!-- end of project div for image link to application --> */}
-
-                <div className="project">
-                  <a href="https://github.com/MauraSlavin/Quiz" target="_blank" rel="noopener noreferrer">Github page for <strong>Quiz</strong>.</a>
-                </div> {/*  <!-- end of project div for github link --> */}
-
-              </div> {/* <!-- end of Project div --> */}
-
-
-              {/* <!-- PROJECT 7 --> */}
-              <div className="work">
-
-                <div className="project">
-                  <a href="https://mauraslavin.github.io/Weather/" target="_blank" rel="noopener noreferrer">
-                    <img src={proj7Icon} alt="Weather application screenshot" style={padding}/>
-                    <h3 className="bg-blue rounded"><strong>Weather</strong></h3>
-                  </a>
-                </div> {/* <!-- end of project div for image link to application --> */}
-
-                <div className="project">
-                  <a href="https://github.com/MauraSlavin/Weather" target="_blank" rel="noopener noreferrer">Github page for <strong>Weather</strong>.</a>
-                </div> {/*  <!-- end of project div for github link --> */}
-
-              </div> {/* <!-- end of Project div --> */}
-
-            </div> {/* <!-- of icons div. --> */}
-
-          </div> 
-        </div> 
-    //   </div> 
-    // </div> 
-
+          <Project 
+            name={projects[2].name}
+            projectLink={projects[2].projectLink}
+            githubLink={projects[2].githubLink}
+            image={icons[2]}
+            alt={projects[2].alt}
+          />
+          
+          <Project 
+            name={projects[3].name}
+            projectLink={projects[3].projectLink}
+            githubLink={projects[3].githubLink}
+            image={icons[3]}
+            alt={projects[3].alt}
+          />
+          
+          <Project 
+            name={projects[4].name}
+            projectLink={projects[4].projectLink}
+            githubLink={projects[4].githubLink}
+            image={icons[4]}
+            alt={projects[4].alt}
+          />
+          
+          <Project 
+            name={projects[5].name}
+            projectLink={projects[5].projectLink}
+            githubLink={projects[5].githubLink}
+            image={icons[5]}
+            alt={projects[5].alt}
+          />
+          
+          <Project 
+            name={projects[6].name}
+            projectLink={projects[6].projectLink}
+            githubLink={projects[6].githubLink}
+            image={icons[6]}
+            alt={projects[6].alt}
+          />
+          
+        </div>
+      </div>
+    </div>
+        
   );
 }
 
