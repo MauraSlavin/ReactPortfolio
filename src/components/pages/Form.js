@@ -8,29 +8,59 @@ export default class extends React.Component {
 	this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit (event) {
-	const templateId = 'template_ge54Jsqk';
-	
-	this.sendMessage(templateId, {
-		message_html: this.state.message, 
-		from_name: this.state.name, 
-		reply_to: this.state.email,
-		to_name: "Maura Slavin",
-	})
+  handleChange (event) {
+	let value = event.target.value;
+	let name = event.target.name;
+
+    this.setState({[name]: value})
   }
+
+  // from https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+  validateEmail (email) {
+  	const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  	return re.test(email);
+  }
+
+  handleSubmit (event) {
+	event.preventDefault();
+	const templateId = 'template_ge54Jsqk';
+
+	if ((this.state.message.length === 0) || (this.state.message === "Please enter a message.")) {
+		alert('Email not sent.  Please enter a message. Thank you.');
+		this.setState ({
+			message: "Please enter a message."
+		})
+	} else if ((this.state.name.length === 0) || (this.state.name === "Please enter a name.")) {
+		alert('Email not sent.  Please enter a name. Thank you.');
+		this.setState ({
+			name: "Please enter a name."
+		})
+	} else if (!this.validateEmail(this.state.email)) {
+		alert('Email not sent.  Please enter a valid email address. Thank you.');
+		this.setState({
+			email: "Please enter a valid email address."
+		})
+	} else {
+		alert(templateId + " " + this.state.name + " " + this.state.email + " " + this.state.email);
+		this.sendMessage(templateId, {
+			message_html: this.state.message, 
+			from_name: this.state.name, 
+			reply_to: this.state.email,
+			to_name: "Maura Slavin"
+		});
+	};
+  }
+	
 
   sendMessage (templateId, variables) {
 
 	window.emailjs.send('gmail', templateId, variables, 'user_SKsFv4sS17XKyEqKFqn8o')
-	// document.emailjs.send('gmail', templateId, variables, 'user_SKsFv4sS17XKyEqKFqn8o')
   	.then(res => {
-    	alert('Email successfully sent!');
-		alert(res.status + res.text);
+    	alert('Email successfully sent! ' + res.status + ": " + res.text);
   	})
   	// Handle errors 
   	.catch(err => {
-		  alert(err);
-		  console.error('Here some thoughts on the error that occured:', err)
+		  alert('Here some thoughts on the error that occured:', err)
 	});
   }
 
@@ -102,11 +132,5 @@ export default class extends React.Component {
 	)
   }
 
-  handleChange(event) {
-	let value = event.target.value;
-	let name = event.target.name;
-
-    this.setState({[name]: value})
-  }
 
 }
