@@ -1,6 +1,6 @@
 #my-pic {
-    float: left;
     /* to get the text to wrap around the picture */
+    float: left;
     width: 200px;
     height: auto;
     margin-top: 10px;
@@ -8,6 +8,7 @@
     list-style-position: inside;
 }
 
+/* same background image as page */
 .bg-img {
     background-image: url("./images/aqua_marble_seamless.png");
 }

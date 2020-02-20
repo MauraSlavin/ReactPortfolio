@@ -1,13 +1,16 @@
 import React from 'react';
 
+// component for contact form on contact page
 export default class extends React.Component {
   constructor(props) {
 	super(props);
+	// defaults for the page
 	this.state = { message: '', name: '', email: '' };
 	this.handleChange = this.handleChange.bind(this);
 	this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  // change values entered on page in state
   handleChange (event) {
 	let value = event.target.value;
 	let name = event.target.name;
@@ -15,33 +18,39 @@ export default class extends React.Component {
     this.setState({[name]: value})
   }
 
+  // check for valid email address format
   // from https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
   validateEmail (email) {
   	const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   	return re.test(email);
   }
 
+  // Error checking, and send email
   handleSubmit (event) {
 	event.preventDefault();
+	// emailjs template id for email being sent
 	const templateId = 'template_ge54Jsqk';
 
+	// Make sure a message was entered
 	if ((this.state.message.length === 0) || (this.state.message === "Please enter a message.")) {
 		alert('Email not sent.  Please enter a message. Thank you.');
 		this.setState ({
 			message: "Please enter a message."
 		})
+	// Make sure a name was entered
 	} else if ((this.state.name.length === 0) || (this.state.name === "Please enter a name.")) {
 		alert('Email not sent.  Please enter a name. Thank you.');
 		this.setState ({
 			name: "Please enter a name."
 		})
+	// Make sure the email address entered is a valid email format
 	} else if (!this.validateEmail(this.state.email)) {
 		alert('Email not sent.  Please enter a valid email address. Thank you.');
 		this.setState({
 			email: "Please enter a valid email address."
 		})
+	// Sent the email to Maura, and alert user that the email was sent.
 	} else {
-		alert(templateId + " " + this.state.name + " " + this.state.email + " " + this.state.email);
 		this.sendMessage(templateId, {
 			message_html: this.state.message, 
 			from_name: this.state.name, 
@@ -52,9 +61,10 @@ export default class extends React.Component {
   }
 	
 
+  // sends email via emailjs to Maura
   sendMessage (templateId, variables) {
 
-	window.emailjs.send('gmail', templateId, variables, 'user_SKsFv4sS17XKyEqKFqn8o')
+	window.emailjs.send('gmail', templateId, variables)
   	.then(res => {
     	alert('Email successfully sent! ' + res.status + ": " + res.text);
   	})
@@ -67,8 +77,9 @@ export default class extends React.Component {
 
   render() {
 	return (
-
 		<form id="contact-form">
+		{/* form component */}
+		{/* Input filed for the name */}
 			<div className="form-group row">
 				<label htmlFor="name" className="col-form-label">Name:</label>
 				<div>
@@ -85,6 +96,7 @@ export default class extends React.Component {
 				</div>
 			</div>
 
+		{/* Input filed for the email address */}
 			<div className="form-group row">
 				<label htmlFor="email" className="col-form-label">Email:</label>
 				<div>
@@ -101,6 +113,7 @@ export default class extends React.Component {
 				</div>
 			</div>
 
+		{/* Input filed for the message */}
 			<div className="form-group row">
 				<label htmlFor="message" className="col-form-label">Message:</label>
 				<div>
@@ -116,6 +129,7 @@ export default class extends React.Component {
 				</div>
 			</div>
 
+		{/* The submit button to send the email (after error checking) */}
 			<div className="form-group row">
 				<label htmlFor="submit" className="col-form-label"></label>
 				<div>

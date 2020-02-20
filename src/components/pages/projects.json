@@ -2,7 +2,6 @@
     {
         "name": "Burger",
         "image": "./images/icons/burger.png",
-        "imageNum": "0",
         "alt": "Burger app screenshot",
         "githubLink": "https://github.com/MauraSlavin/burger",
         "projectLink": "https://floating-hamlet-11534.herokuapp.com/",
@@ -12,7 +11,6 @@
     {
         "name": "Daily Planner",
         "image": "./images/icons/calendar-screenshot.png",
-        "imageNum": "1",
         "alt": "Daily Planner screenshot",
         "githubLink": "https://github.com/MauraSlavin/calendar",
         "projectLink": "https://mauraslavin.github.io/Calendar/",
@@ -22,7 +20,6 @@
     {
         "name": "Finding Movies",
         "image": "./images/icons/movie-screenshot.png",
-        "imageNum": "2",
         "alt": "Finding Movies screenshot",
         "githubLink": "https://github.com/MauraSlavin/07-movie-API-search",
         "projectLink": "https://mauraslavin.github.io/07-movie-API-search/",
@@ -32,7 +29,6 @@
     {
         "name": "Note Taker",
         "image": "./images/icons/notetaker.png",
-        "imageNum": "3",
         "alt": "Note Taker screenshot",
         "githubLink": "https://github.com/MauraSlavin/notetaker",
         "projectLink": "https://polar-dawn-99284.herokuapp.com/",
@@ -42,7 +38,6 @@
     {
         "name": "Rewards",
         "image": "./images/icons/rewards.png",
-        "imageNum": "4",
         "alt": "Rewards app screenshot",
         "githubLink": "https://github.com/MauraSlavin/rewards",
         "projectLink": "https://floating-hamlet-11534.herokuapp.com/",
@@ -52,7 +47,6 @@
     {
         "name": "Weather",
         "image": "./images/icons/weather-screenshot.png",
-        "imageNum": "5",
         "alt": "Weather app screenshot",
         "githubLink": "https://github.com/MauraSlavin/Weather",
         "projectLink": "https://mauraslavin.github.io/Weather/",
@@ -62,7 +56,6 @@
     {
         "name": "Quiz",
         "image": "./images/icons/quiz-screenshot.png",
-        "imageNum": "6",
         "alt": "Quiz app screenshot",
         "githubLink": "https://github.com/MauraSlavin/Quiz",
         "projectLink": "https://mauraslavin.github.io/Quiz/",

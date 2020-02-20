@@ -1,23 +1,20 @@
 import React from "react";
-// to make router works
+// to make router work
 import {Link} from "react-router-dom";
-// import "./NavTabs.css";
 
-// MUST use anonymous functions ... () => fcn() ... to pass parameters to a function in JSX
-// Thing passed is the name of the component.
-// function NavTabs(props) {
+// NavTabs is the navbar, and controls what page is loaded.
 function NavTabs() {
   return (
     
     <div className="navbar justify-content-between">
-
+      {/* Sub-header with my name and phone number */}
       <ul className="list-unstyled ml-2 mt-2 mb-1">
         <li className="text-light">MauraMSlavin@gmail.com</li>
         <li className="text-light">603.397.8572</li>
       </ul>
 
       <ul className="nav nav-tabs border-bottom-0">
-
+        {/* Link to "About me" (Home) page */}
         <li className="nav-item">
           <Link
             to="/about"
@@ -25,6 +22,7 @@ function NavTabs() {
           >About</Link>
         </li>
 
+        {/* Link to Portfolio page */}
         <li className="nav-item">
           <Link
             to="/portfolio"
@@ -32,6 +30,7 @@ function NavTabs() {
           >Portfolio</Link>
         </li>
 
+        {/* Linke to Contact page */}
         <li className="nav-item">
           <Link
             to="/contact"

@@ -1,9 +1,13 @@
 import React from "react";
+// import style sheet
 import "./Pages.css";
+// import background image
 import "./images/aqua_marble_seamless.png";
+// import component
 import Form from "./Form"
 
 
+// Contact component has a header and the form component
 function Contact() {
   return (  
     <div>

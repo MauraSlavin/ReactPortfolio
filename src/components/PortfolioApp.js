@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import other components
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -7,19 +8,20 @@ import Footer from "./Footer";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 class PortfolioApp extends Component {
+  // set the current page
   state = {
     currentPage: "Home"
   };
 
+  // handle loading a new page
   handlePageChange = page => {
     this.setState({ currentPage: page });
   };  // end of handlePageChange
 
 
-  // wrap entire thing in Router.  Let's us use Router stuff in all of JSX
-  // Route lets us define routes
 
-  // can create NavLink component, so we're not repeating this 4 times.  See David's code.
+  // Router has two components: Header & Footer
+  // The navbar is in the Header, which controls what page is loaded.
   render() {
     return (
       <Router>

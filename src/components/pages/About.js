@@ -1,7 +1,11 @@
 import React from "react";
+// import Maura's picture
 import photo from "./images/Maura.jpg";
+// import style sheet
 import "./Pages.css";
+// import background picture
 import "./images/aqua_marble_seamless.png";
+// import resume
 import resume from './files/resume.pdf';
 
 
@@ -9,6 +13,7 @@ function About() {
   return (
     <div>
     
+      {/* Links to Github Profile, resume, and LinkedIn Profile */}
       <div>
         <div className="row blue-border-top p-2">
 
@@ -33,7 +38,7 @@ function About() {
           {/* my picture */}
           <img src={photo} id="my-pic" alt="Maura's pic"/>
         
-          {/* my paragraph */}
+          {/* my bio */}
           <p>Hello! I’m Maura Slavin, and I’m excited to get back into coding!</p>
 
           <p>Maura Slavin is an enthusiastic future full stack web developer. She is loving learning technical skills such
