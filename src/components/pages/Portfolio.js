@@ -3,7 +3,7 @@ import "./Pages.css";
 import "./Portfolio.css";
 import "./images/aqua_marble_seamless.png";
 import projects from "./projects.json";
-import Project from "./Project"
+import Project from "./Project";
  
 const icons = [
     require('./images/icons/burger.png'),
@@ -31,6 +31,7 @@ function Portfolio() {
               githubLink={project.githubLink}
               image={icons[index]} 
               alt={project.alt}
+              technologies={project.technologies}
             />
 
           ))}

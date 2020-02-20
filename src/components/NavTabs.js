@@ -1,7 +1,7 @@
 import React from "react";
 // to make router works
 import {Link} from "react-router-dom";
-import "./NavTabs.css";
+// import "./NavTabs.css";
 
 // MUST use anonymous functions ... () => fcn() ... to pass parameters to a function in JSX
 // Thing passed is the name of the component.
