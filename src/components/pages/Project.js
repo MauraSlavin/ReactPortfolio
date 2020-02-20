@@ -5,11 +5,7 @@ import "./Portfolio.css";
 import Technology from "./Technology";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
-// import Title from 'react-bootstrap/Title';
-// import Header from 'react-bootstrap/Header';
 import Modal from 'react-bootstrap/Modal';
-// import Body from 'react-bootstrap/Body';
-// import Footer from 'react-bootstrap/Footer';
 
 
 const padding = { padding: "70px 20px 20px"};
