@@ -1,20 +1,13 @@
+
+
 [
     {
-        "name": "Burger",
-        "image": "./images/icons/burger.png",
-        "alt": "Burger app screenshot",
-        "githubLink": "https://github.com/MauraSlavin/burger",
-        "projectLink": "https://floating-hamlet-11534.herokuapp.com/",
-        "technologies": ["SQL", "jQuery", "Express", "Handlebars", "Bootstrap", "Node.js", "html", "css"]
-    },
-    
-    {
-        "name": "Daily Planner",
-        "image": "./images/icons/calendar-screenshot.png",
-        "alt": "Daily Planner screenshot",
-        "githubLink": "https://github.com/MauraSlavin/calendar",
-        "projectLink": "https://mauraslavin.github.io/Calendar/",
-        "technologies": ["jQuery", "JavaScript", "moment.js", "Bootstrap", "html", "css"]
+        "name": "Rewards",
+        "image": "./images/icons/rewards.png",
+        "alt": "Rewards app screenshot",
+        "githubLink": "https://github.com/MauraSlavin/rewards",
+        "projectLink": "https://enigmatic-caverns-81757.herokuapp.com/",
+        "technologies": ["Kanban Project Management (leader)", "Sequelize & mySQL", "Express", "jQuery", "axios", "Node.js", "Nodemailer", "Materialize CSS", "ES Lint", "html", "css"]
     },
     
     {
@@ -27,6 +20,33 @@
     },
     
     {
+        "name": "Employee Directory",
+        "image": "./images/icons/employee-dir.png",
+        "alt": "Employee Directory screenshot",
+        "githubLink": "https://github.com/MauraSlavin/employeedir",
+        "projectLink": "https://employee-directory-mms.herokuapp.com/",
+        "technologies": ["React w/class-based components", "Axios", "Bootstrap", "Node.js", "html", "css"]
+    },
+
+    {
+        "name": "Fitness Tracker",
+        "image": "./images/icons/fitness.png",
+        "alt": "Fitness Tracker screenshot",
+        "githubLink": "https://github.com/MauraSlavin/fitness",
+        "projectLink": "https://gentle-sierra-23761.herokuapp.com/workout.html",
+        "technologies": ["MongoDB & Mongoose", "Progressive Web App", "Express", "jQuery", "Bootstrap", "Node.js", "html", "css"]
+    },
+
+    {
+        "name": "Burger",
+        "image": "./images/icons/burger.png",
+        "alt": "Burger app screenshot",
+        "githubLink": "https://github.com/MauraSlavin/burger",
+        "projectLink": "https://floating-hamlet-11534.herokuapp.com/",
+        "technologies": ["SQL", "jQuery", "Express", "Handlebars", "Bootstrap", "Node.js", "html", "css"]
+    },
+    
+    {
         "name": "Note Taker",
         "image": "./images/icons/notetaker.png",
         "alt": "Note Taker screenshot",
@@ -36,12 +56,12 @@
     },
     
     {
-        "name": "Rewards",
-        "image": "./images/icons/rewards.png",
-        "alt": "Rewards app screenshot",
-        "githubLink": "https://github.com/MauraSlavin/rewards",
-        "projectLink": "https://enigmatic-caverns-81757.herokuapp.com/",
-        "technologies": ["Kanban Project Management (leader)", "Sequelize", "Express", "jQuery", "axios", "Node.js", "Nodemailer", "Materialize CSS", "ES Lint", "html", "css"]
+        "name": "Daily Planner",
+        "image": "./images/icons/calendar-screenshot.png",
+        "alt": "Daily Planner screenshot",
+        "githubLink": "https://github.com/MauraSlavin/calendar",
+        "projectLink": "https://mauraslavin.github.io/Calendar/",
+        "technologies": ["jQuery", "JavaScript", "moment.js", "Bootstrap", "html", "css"]
     },
     
     {
@@ -51,14 +71,6 @@
         "githubLink": "https://github.com/MauraSlavin/Weather",
         "projectLink": "https://mauraslavin.github.io/Weather/",
         "technologies": ["Local Storage", "jQuery", "JavaScript", "OpenWeatherMap API", "Bootstrap", "html", "css"]
-    },
-    
-    {
-        "name": "Quiz",
-        "image": "./images/icons/quiz-screenshot.png",
-        "alt": "Quiz app screenshot",
-        "githubLink": "https://github.com/MauraSlavin/Quiz",
-        "projectLink": "https://mauraslavin.github.io/Quiz/",
-        "technologies": ["JavaScript", "Local Storage", "jQuery", "Bootstrap", "html", "css"]
     }
+
 ]

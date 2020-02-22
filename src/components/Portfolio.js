@@ -15,18 +15,20 @@ import Modal from 'react-bootstrap/Modal';
  
 // import images for each of the apps on the Portfolio page.
 const icons = [
-    require('./images/icons/burger.png'),
-    require('./images/icons/calendar-screenshot.png'),
-    require('./images/icons/movie-screenshot.png'),
-    require('./images/icons/notetaker.png'),
     require('./images/icons/rewards.png'),
+    require('./images/icons/movie-screenshot.png'),
+    require('./images/icons/employee-dir.png'),
+    require('./images/icons/fitness.png'),
+    require('./images/icons/burger.png'),
+    require('./images/icons/notetaker.png'),
+    require('./images/icons/calendar-screenshot.png'),
     require('./images/icons/weather-screenshot.png'),
-    require('./images/icons/quiz-screenshot.png'),
+    // require('./images/icons/quiz-screenshot.png'),
 ];
 
 // technologies used for this app (ReactPortfolio), to be displayed when
 //  that button is clicked
-const technologies = ["React", "React-bootstrap", "Bootstrap", "Node.js", "emailjs", "React-router-dom", "html", "css"];
+const technologies = ["React w/function-based components", "React-bootstrap", "Bootstrap", "Node.js", "emailjs", "React-router-dom", "html", "css"];
 
 function Portfolio() {
 

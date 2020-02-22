@@ -33,7 +33,7 @@ export default function Project(props) {
 
             {/* Link to Github page */}
             <div className="project mb-0">
-                <a href={props.githubLink} className="text-dark" target="_blank" rel="noopener noreferrer">Github page for <strong>{props.name}</strong>.</a>
+                <a href={props.githubLink} className="text-dark" target="_blank" rel="noopener noreferrer">Github page: <strong>{props.name}</strong>.</a>
             </div> {/*  <!-- end of project div for github link --> */}
 
             {/* Click for popup of technologies used */}
