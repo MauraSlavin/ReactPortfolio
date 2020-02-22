@@ -40,7 +40,7 @@
         "image": "./images/icons/rewards.png",
         "alt": "Rewards app screenshot",
         "githubLink": "https://github.com/MauraSlavin/rewards",
-        "projectLink": "https://floating-hamlet-11534.herokuapp.com/",
+        "projectLink": "https://enigmatic-caverns-81757.herokuapp.com/",
         "technologies": ["Kanban Project Management (leader)", "Sequelize", "Express", "jQuery", "axios", "Node.js", "Nodemailer", "Materialize CSS", "ES Lint", "html", "css"]
     },
     
