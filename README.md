@@ -1,7 +1,6 @@
 # Portfolio
-Github repository: [https://github.com/MauraSlavin/reactportfolio](https://github.com/MauraSlavin/employeedir). <br />
-<!-- Deployed app on Heroku: [https://employee-directory-mms.herokuapp.com/](https://employee-directory-mms.herokuapp.com/). -->
-
+Link to deployed Portfolio: [https://github.com/MauraSlavin/reactportfolio](https://github.com/MauraSlavin/employeedir). <br />
+Github repository: [https://immense-dawn-45176.herokuapp.com/](https://immense-dawn-45176.herokuapp.com/).
 
 
 ## Description
