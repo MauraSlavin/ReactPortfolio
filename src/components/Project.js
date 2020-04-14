@@ -31,6 +31,13 @@ export default function Project(props) {
                 </a>
             </div> {/* <!-- end of project div for image link to application --> */}
 
+            {/* Description of the app */}
+            <div className="paragraph mb-0 mx-3">
+                <p>{props.description}</p>
+            </div> {/* <!-- end of project div for description of app --> */}
+            
+            <hr mx-3></hr>
+
             {/* Link to Github page */}
             <div className="project mb-0">
                 <a href={props.githubLink} className="text-dark" target="_blank" rel="noopener noreferrer">Github page: <strong>{props.name}</strong>.</a>

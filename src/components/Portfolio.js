@@ -80,6 +80,7 @@ function Portfolio() {
               image={icons[index]} 
               alt={project.alt}
               technologies={project.technologies}
+              description={project.description}
             />
 
           ))}

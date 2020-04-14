@@ -44,6 +44,16 @@ h3 {
 .project {
   transition: transform .2s;
   margin-bottom: 20px;
+  color: #2220b4;
+}
+
+.paragraph {
+  height: 80px;
+  color: #2220b4;
+}
+
+hr {
+  border: 1px solid #2220b4 !important;
 }
 
 /* styles for project screenshots */
@@ -65,6 +75,7 @@ h3 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
+  height: 90px;
 }
 
 .project {
