@@ -22,5 +22,5 @@ The Contact page has a form to send Maura an email.
     - Bootstrap
     - Node.js
     - emailjs
-    - Html
+    - HTML
     - CSS

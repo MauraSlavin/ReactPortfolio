@@ -43,17 +43,17 @@ function About() {
 
           <p>Maura Slavin is an enthusiastic future full stack web developer. She is loving learning technical skills such
             as HTML5, CSS3, JavaScript, jQuery, Node.js, Java, Express.js, React.js, Database Theory, MongoDB, MySQL,
-            Command Line, Git, Slack and more at UNH Coding Boot Camp and was fascinated by the power of programming while
-            earning a BS in CS at UVM. Projects developed recently include a Professional Portfolio Website, Finding Films
-            (to find a movie the user likes), a Weather application, a Daily Planner, and a Password generator.
+            Command Line, Git, Heroku, Slack and more at UNH Coding Boot Camp and was fascinated by the power of programming
+            while earning a Bachelor of Science in Computer Science at the University of Vermont. Projects developed recently 
+            include a Professional Portfolio Website, Finding Films (to find a movie the user likes), a Weather application, 
+            a Daily Planner, and a Password generator.
           </p>
 
           <p>
             As president and co-founder of the newly formed 501c3, Marina’s Miles, she expanded her communication,
             organizational and time-management skills, while learning the many intricacies of founding and maintaining a
-            charity and planning a public event. Scholarships of $11,000 have been awarded over the past three years, with
-            more than twice that invested for future scholarships, while keeping the memory of her daughter alive in a
-            meaningful way.
+            charity and planning a public event. About $40,000 has been raised for college scholarships, while keeping 
+            the memory of her daughter alive in a meaningful way.
           </p>
 
           <p>
@@ -65,8 +65,7 @@ function About() {
 
           <p>
             She enjoys spending time with her family and friends, bicycling, reading, kayaking, hiking and just being
-            outside (in almost any kind of
-            weather – as long as I’m dressed properly!).
+            outside (in almost any kind of weather – as long as I’m dressed properly!).
           </p>
 
           <p>

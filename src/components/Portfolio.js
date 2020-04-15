@@ -28,7 +28,7 @@ const icons = [
 
 // technologies used for this app (ReactPortfolio), to be displayed when
 //  that button is clicked
-const technologies = ["React w/function-based components", "React-bootstrap", "Bootstrap", "Node.js", "emailjs", "React-router-dom", "html", "css"];
+const technologies = ["React w/function-based components", "React-bootstrap", "Bootstrap", "Node.js", "emailjs", "React-router-dom", "HTML", "CSS"];
 
 function Portfolio() {
 
