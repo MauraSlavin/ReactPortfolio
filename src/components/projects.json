@@ -6,7 +6,7 @@
         "image": "./images/icons/scheduler.png",
         "alt": "Scheduler app screenshot",
         "githubLink": "https://github.com/MauraSlavin/scheduler",
-        "projectLink": "https://https://pure-peak-11802.herokuapp.com/",
+        "projectLink": "https://pure-peak-11802.herokuapp.com/",
         "technologies": ["MongoDB & Mongoose", "Express", "Vue.js & Vuetify", "Axios", "Node.js", "JavaScript", "moment.js", "jsPDF", "HTML5 & CSS3"],
         "description": "Schedules volunteers for weekly occuring events."
     },
