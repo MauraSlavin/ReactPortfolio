@@ -2,12 +2,22 @@
 
 [
     {
+        "name": "Weekly Scheduler",
+        "image": "./images/icons/scheduler.png",
+        "alt": "Scheduler app screenshot",
+        "githubLink": "https://github.com/MauraSlavin/scheduler",
+        "projectLink": "https://https://pure-peak-11802.herokuapp.com/",
+        "technologies": ["MongoDB & Mongoose", "Express", "Vue.js & Vuetify", "Axios", "Node.js", "JavaScript", "moment.js", "jsPDF", "HTML5 & CSS3"],
+        "description": "Schedules volunteers for weekly occuring events."
+    },
+
+    {
         "name": "Rewards",
         "image": "./images/icons/rewards.png",
         "alt": "Rewards app screenshot",
         "githubLink": "https://github.com/MauraSlavin/rewards",
         "projectLink": "https://enigmatic-caverns-81757.herokuapp.com/",
-        "technologies": ["Kanban Project Management (leader)", "Sequelize & mySQL", "Express", "jQuery", "Axios", "Node.js", "Nodemailer", "Materialize CSS", "ES Lint", "HTML", "CSS"],
+        "technologies": ["Sequelize & mySQL", "Kanban Project Management (leader)", "Express", "jQuery", "Axios", "Node.js", "Nodemailer", "Materialize CSS", "ES Lint", "HTML5 & CSS3"],
         "description": "Group project to inspire children to do chores with a fun rewards system."
     },
     
@@ -17,18 +27,8 @@
         "alt": "Finding Movies screenshot",
         "githubLink": "https://github.com/MauraSlavin/07-movie-API-search",
         "projectLink": "https://mauraslavin.github.io/07-movie-API-search/",
-        "technologies": ["Kanban Project Management (leader)", "Materialize CSS", "jQuery", "NY Times API", "OMDB API", "The Movie DB API", "TasteDive API", "JavaScript", "HTML", "CSS", "Fontawesome"],
-        "description": "Group project to find information on your favorite movies, and suggestions for future movies."
-    },
-    
-    {
-        "name": "Employee Directory",
-        "image": "./images/icons/employee-dir.png",
-        "alt": "Employee Directory screenshot",
-        "githubLink": "https://github.com/MauraSlavin/employeedir",
-        "projectLink": "https://employee-directory-mms.herokuapp.com/",
-        "technologies": ["React w/class-based components", "Axios", "Bootstrap", "Node.js", "HTML", "CSS"],
-        "description": "Displays an employee directory with search and sort capabilities."
+        "technologies": ["Kanban Project Management (leader)", "Materialize CSS", "jQuery", "NY Times API", "OMDB API", "The Movie DB API", "TasteDive API", "JavaScript", "HTML5 & CSS3", "Fontawesome"],
+        "description": "Group project to find movies, and suggestions for future movies."
     },
     
     {
@@ -37,18 +37,8 @@
         "alt": "Fitness Tracker screenshot",
         "githubLink": "https://github.com/MauraSlavin/fitness",
         "projectLink": "https://gentle-sierra-23761.herokuapp.com/workout.HTML",
-        "technologies": ["MongoDB & Mongoose", "Progressive Web App", "Express", "jQuery", "Bootstrap", "Node.js", "HTML", "CSS"],
-        "description": "Inspire fitness by creating workouts and adding exercises to track exercise routines."
-    },
-    
-    {
-        "name": "Burger",
-        "image": "./images/icons/burger.png",
-        "alt": "Burger app screenshot",
-        "githubLink": "https://github.com/MauraSlavin/burger",
-        "projectLink": "https://floating-hamlet-11534.herokuapp.com/",
-        "technologies": ["SQL", "jQuery", "Express", "Handlebars", "Bootstrap", "Node.js", "HTML", "CSS"],
-        "description": "Fun app to create new burgers and 'devour' them!"
+        "technologies": ["Progressive Web App", "MongoDB & Mongoose", "Express", "jQuery", "Bootstrap", "Node.js", "HTML5 & CSS3"],
+        "description": "Inspire fitness by creating and tracking workouts."
     },
     
     {
@@ -57,18 +47,8 @@
         "alt": "Note Taker screenshot",
         "githubLink": "https://github.com/MauraSlavin/notetaker",
         "projectLink": "https://polar-dawn-99284.herokuapp.com/",
-        "technologies": ["Express", "jQuery", "Node.js", "npm fs (file system)", "Bootstrap", "HTML", "CSS", "Fontawesome"],
+        "technologies": ["Express", "jQuery", "Node.js", "npm fs (file system)", "Bootstrap", "HTML5 & CSS3", "Fontawesome"],
         "description": "Organize notes for the busy executive."
-    },
-    
-    {
-        "name": "Daily Planner",
-        "image": "./images/icons/calendar-screenshot.png",
-        "alt": "Daily Planner screenshot",
-        "githubLink": "https://github.com/MauraSlavin/calendar",
-        "projectLink": "https://mauraslavin.github.io/Calendar/",
-        "technologies": ["jQuery", "JavaScript", "moment.js", "Bootstrap", "HTML", "CSS"],
-        "description": "Organize work schedule for the busy executive."
     },
     
     {
@@ -77,7 +57,7 @@
         "alt": "Weather app screenshot",
         "githubLink": "https://github.com/MauraSlavin/Weather",
         "projectLink": "https://mauraslavin.github.io/Weather/",
-        "technologies": ["Local storage", "jQuery", "JavaScript", "OpenWeatherMap API", "Bootstrap", "HTML", "CSS"],
+        "technologies": ["Local storage", "jQuery", "JavaScript", "OpenWeatherMap API", "Bootstrap", "HTML5 & CSS3"],
         "description": "Check weather for multiple cities for the traveling executive."
     }
 

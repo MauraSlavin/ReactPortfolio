@@ -15,13 +15,14 @@ import Modal from 'react-bootstrap/Modal';
  
 // import images for each of the apps on the Portfolio page.
 const icons = [
+    require('./images/icons/scheduler.png'),
     require('./images/icons/rewards.png'),
     require('./images/icons/movie-screenshot.png'),
-    require('./images/icons/employee-dir.png'),
+    // require('./images/icons/employee-dir.png'),
     require('./images/icons/fitness.png'),
-    require('./images/icons/burger.png'),
+    // require('./images/icons/burger.png'),
     require('./images/icons/notetaker.png'),
-    require('./images/icons/calendar-screenshot.png'),
+    // require('./images/icons/calendar-screenshot.png'),
     require('./images/icons/weather-screenshot.png'),
     // require('./images/icons/quiz-screenshot.png'),
 ];
